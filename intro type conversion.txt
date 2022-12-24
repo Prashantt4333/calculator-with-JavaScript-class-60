@@ -1,0 +1,13 @@
+	Type conversion 
+
+string ----> Number
+
+ '5' ====parseInt() / parseFloat()====> 5
+ '10' ====parseInt() / parseFloat()====> 10
+
+the process of converting one data type into 
+another data type is called type conversion.
+
+there are 2 kind of type conversion
+1. Implicit conversion
+2. Explicit converdion

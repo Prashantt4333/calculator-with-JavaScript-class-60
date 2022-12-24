@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Calculator With JavaScript</title>
+        <style>
+            .myCalculator{
+                width: 450px;
+                height: 450px;
+                padding: 10px;
+                background:#8d8989;
+                margin:100px auto;
+                padding-top: 30px;
+                border-radius: 10px;
+            }
+            .myresult{
+                width: 90%;
+                height:80px;
+                border-radius: 10px ;
+                background: #181111;
+                margin: auto;
+                font-size: 2em;
+                color: #fff;
+                padding-right:10px;
+                text-align: right;
+                line-height: 60px;
+                position: relative;
+                
+            }
+            .mytable{
+                width: 100%;
+                height: 75%;
+                margin-top: 30px;
+                text-align: center;
+            }
+            td > button{
+                width: 100%;
+                height: 100%;
+                border: none;
+                cursor: pointer;
+                background:#fffe;
+                font-size: 20px;
+                border-radius: 10px;
+                font-weight: bolder;
+               
+            }
+            td > button:hover{
+                color: #fff;
+                transition: 0.7s ease-in-out;
+                background: #000 ; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="myCalculator">
+            <div class="myresult">
+                
+            </div>
+            <table  class="mytable">
+                <tr>
+                    <td>
+                        <button onclick="clicked(this)">7</button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(this)">8</button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(this)">9</button>
+                    </td>
+                    <td>
+                        <button style="background:#2f781e;" onclick="clicked(this)">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="clicked(this)">4</button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(this)">5</button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(this)">6</button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(this)">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="clicked(this)">1</button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(this)">2</button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(this)">3</button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(this)">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="clicked(this)">0</button>
+                    </td>
+                    <td>
+                        <button  onclick="clicked(this)">.</button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(this)">/</button>
+                    </td>
+                    <td>
+                        <button onclick="clicked(this)">*</button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+
+        <script src="./index.js"></script>
+
+    </body>
+</html>
