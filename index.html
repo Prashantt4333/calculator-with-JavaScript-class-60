@@ -54,24 +54,31 @@
                 transition: 0.5s ease-in-out;
                 background: #000 ; 
             }
-            .Clear{
-                width: 15%;
+            #clear_id{
+                width: 22%;
                 height:8%;
                 border: none;
                 top: 20px;
                 position: relative;
-                left:8px;
+                left:5px;
+                font-size: 15px;
                 cursor: pointer;
-                background:#fffe;
-                border-radius: 2px;
+                background:red;
+                color: #fff ;
+                border-radius:8px;
                 font-weight: bolder;
+            }
+            #clear_id:hover{
+                color: #000 ;
+                transition: 0.5s ease-in-out;
+                background: #dfdada ; 
             }
         </style>
     </head>
     <body>
         <div class="myCalculator">
             <div class="myresult"></div>
-            <button class="Clear" id="clear_id">Clear</button>
+            <button id="clear_id">Clear</button>
             <table  class="mytable">
                 <tr>
                     <td>
